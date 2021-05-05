@@ -1,4 +1,5 @@
 import { Header } from "../components/Header";
+import Jobs from "./addJobs";
 import { Applications } from "./Applications";
 import { Assesments } from "./Assessments";
 import Home from "./Home";
@@ -10,7 +11,8 @@ function App() {
     <div className="App"> 
       <Header />
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Home}/>
+        <Route path="/jobs" component={Jobs}/>
         <Route path="/saved" component={SavedJobs} />
         <Route path="/applications" component={Applications} />
         <Route path="/assesments" component={Assesments} />
